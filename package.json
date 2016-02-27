@@ -1,11 +1,11 @@
 {
-  "name": "React-Reduc-Starter",
+  "name": "React-Reduc-Boilerplate",
   "version": "1.0.0",
   "description": "Basic Boilerplate for a React with Redux app",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:git/gregmcwhirter/react-redux-starter.git"
+    "url": "git@github.com:git/gregmcwhirter/react-redux-boilerplate.git"
   },
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"

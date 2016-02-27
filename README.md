@@ -1,1 +1,1 @@
-"# react-redux-starter" 
+"# react-redux-boilerplate" 
