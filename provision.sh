@@ -65,8 +65,11 @@ echo 'pyenv virtualenvwrapper' >> ~/.bashrc
 # let's get "node_modules" out of the synced folder
 mkdir /home/vagrant/node_modules
 cd /vagrant
+
+# Vagrant Issue
+# The source and target of the symlink must have the same name or some npm installs might fail
 ln -s /home/vagrant/node_modules/ node_modules
- or
+# or, but could through errors 
 cd /vagrant/react/some-particular-project
 ln -s /home/vagrant/node_modules_some-particular-project/ node_modules
 
