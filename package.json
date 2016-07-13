@@ -1,12 +1,12 @@
 {
-  "name": "redux-simple-starter",
+  "name": "redux-react",
   "version": "1.0.0",
-  "description": "Simple starter package for Redux with React and Babel support",
+  "description": "Boilerplate for React and Redux with Babel support",
   "main": "index.js",
-  "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
+  "repository": "git@github.com:gregmcwhirter/react-redux-boilerplate.git",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "startw": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --watch-poll",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --watch-poll",
+    "build-dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js -d --progress --colors --watch",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
@@ -27,12 +27,19 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
+    "axios": "^0.12.0",
     "babel-preset-stage-1": "^6.1.18",
+    "bootstrap": "^3.3.6",
+    "chart.js": "^1.1.1",
+    "d3": "^4.1.0",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
+    "react-autosuggest": "^3.7.3",
+    "react-chartjs": "^0.7.3",
     "react-dom": "^0.14.3",
     "react-redux": "^4.0.0",
     "react-router": "^2.0.1",
-    "redux": "^3.0.4"
+    "redux": "^3.0.4",
+    "redux-promise": "^0.5.3"
   }
 }

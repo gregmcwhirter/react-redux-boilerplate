@@ -19,6 +19,9 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
+  watchOptions: {
+    poll: 3500
+  },
   devServer: {
     historyApiFallback: true,
     contentBase: './', 
